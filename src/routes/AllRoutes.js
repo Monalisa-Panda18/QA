@@ -1,13 +1,14 @@
 import React from 'react'
 import { Route, Routes } from "react-router-dom";
 // import { HomePage } from "../pages/HomePage"
-import { RaectAdvanceConcepts, ReactComponents, ReactHooks, ReactIntroduction, ReactPropsAndStates } from '../pages/react';
+// import { RaectAdvanceConcepts, ReactComponents, ReactHooks, ReactIntroduction, ReactPropsAndStates } from '../pages/react';
 import { PageNotFound } from '../components/others/PageNotFound';
 import { UnderConsruction } from '../components/others/UnderConsruction';
 import {Dwh,InforQuestions,ScenarioBasedQues} from "../pages/informatica"
 import { PlSql, QuerryQue, Ques } from '../pages/oracle';
 import { ReactForm } from '../pages/other/ReactForm';
 import { HomePage } from '../pages/HomePage';
+import Contact from '../pages/contact/Contact';
 
 
 
@@ -21,12 +22,12 @@ export const AllRoutes = () => {
 
 
       {/* path for react submenu */}
-      <Route path='/react/introduction' Component={ReactIntroduction}></Route>
+      {/* <Route path='/react/introduction' Component={ReactIntroduction}></Route>
       <Route path='/react/component' Component={ReactComponents}></Route>
       <Route path='/react/props' Component={ReactPropsAndStates}></Route>
       <Route path='/react/hooks' Component={ReactHooks}></Route>
-      <Route path='/react/advance_concepts' Component={RaectAdvanceConcepts}></Route>
-
+      <Route path='/react/advance_concepts' Component={RaectAdvanceConcepts}></Route> */}
+     
 
       {/* path for informatica submenu */}
       <Route path='/informatica/dwh' Component={Dwh}></Route>
@@ -42,7 +43,7 @@ export const AllRoutes = () => {
       
 
 
-      <Route></Route>
+      <Route path='/contact_page' Component={Contact}></Route>
 
       <Route path='under_maintenance' Component={UnderConsruction}></Route>
 
